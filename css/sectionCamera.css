@@ -168,15 +168,22 @@
         margin-top: 7rem;
     }
 
+    section#camera .card .text {
+        width: 100%;
+    }
+
     section#camera .card .topics {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: start;
         gap: 1rem;
+
+        background: linear-gradient(45deg, #070d2619, #0411211f);
+        padding: 1rem;
+        border-radius: 1rem;
     }
 
     section#camera .card .topic {
-        background: #00000011;
         padding: 1rem;
         border-radius: 1rem;
     }
