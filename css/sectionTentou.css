@@ -1,0 +1,143 @@
+#tentou {
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-black);
+}
+
+#tentou img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#tentou .topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+#tentou .topic {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+    width: 100%;
+    gap: 1rem;
+
+    position: relative;
+}
+
+#tentou .topic img {
+    width: 4rem;
+    margin-bottom: 0;
+}
+
+#tentou .topic p {
+    color: #e0ecfa;
+    font-size: 1.2rem;
+}
+
+#tentou .content {
+    position: relative;
+    z-index: 2;
+}
+
+#tentou img.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+    opacity: 1;
+
+    mask-image: linear-gradient(to bottom, #000, transparent);
+
+}
+
+#tentou .topic p span {
+    font-weight: 800;
+}
+
+#tentou .topic:nth-child(6) p {
+    font-size: .9rem;
+}
+
+#tentou .text {
+    margin-top: 3rem;
+}
+
+#tentou .text p {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+#tentou .text h3 {
+    font-size: 1.4rem;
+    background: linear-gradient(45deg, #070d26, #041121);
+    font-weight: 500;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    margin-top: 1rem;
+    color: #fff;
+}
+
+#tentou .text h3 span {
+    font-weight: 800;
+}
+
+#tentou .text h4 {
+    background: rgba(255, 0, 0, 0.16);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    margin-top: 1rem;
+}
+
+#tentou .text h4 span {
+    color: #FF0000;
+    font-weight: 600;
+}
+
+@media (min-width: 1080px) {
+    section#tentou .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a b";
+        align-items: center;
+        gap: 8rem;
+    }
+
+    section#tentou img {
+        margin-bottom: 0;
+    }
+
+    section#tentou .content .box {
+        grid-area: b;
+    }
+
+    section#tentou .content header {
+        text-align: left;
+        align-items: start;
+    }
+
+    section#tentou .topic:nth-child(6) p {
+        font-size: 1.2rem;
+    }
+
+    section#tentou .text p {
+        text-align: left;
+    }
+
+    section#tentou .dois {
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,187 @@
+#ate {
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-white);
+    padding-bottom: 8rem;
+}
+
+#ate header h2 {
+    color: #001328;
+}
+
+#ate header p {
+    color: #001328;
+}
+
+#ate header p span {
+    color: #001328;
+}
+
+#ate .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#ate .box.dois .cards {
+    background: #c1ccd9;
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+
+#ate .card {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+    width: 100%;
+    gap: 1rem;
+
+    position: relative;
+}
+
+#ate .card img {
+    width: 4rem;
+}
+
+#ate .card p {
+    color: #001328;
+    font-size: 1.5rem;
+}
+
+#ate .card p span {
+    font-weight: 800;
+}
+
+#ate .card::Before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    background: #0013282f;
+}
+
+#ate .card:nth-child(1)::Before {
+    display: none;
+}
+
+#ate .box.dois header {
+    margin-top: 6rem;
+}
+
+#ate .text {
+    margin-top: 3rem;
+}
+
+#ate .text p:nth-child(1) {
+    font-size: 1.6rem;
+}
+
+#ate .text p {
+    color: #001328;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#ate .text p span {
+    font-weight: 700;
+}
+
+#ate .text h3 {
+    font-size: 1.6rem;
+    background: #c1ccd9;
+    font-weight: 500;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+
+    margin-block: 1rem;
+}
+
+#ate .text h3 span {
+    font-weight: 800;
+}
+
+section#ate a button {
+    margin-top: 3rem;
+}
+
+@media (min-width: 1080px) {
+    section#ate {
+        padding-bottom: 10rem;
+    }
+
+    section#ate .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#ate .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    section#ate .box.dois .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        padding: 4rem;
+        border-radius: 2rem;
+    }
+
+    section#ate .box.dois .cards .card p {
+        font-size: 1.6rem;
+    }
+
+    section#ate .card {
+        padding-block: 3rem;
+    }
+
+    section#ate .card:nth-child(4) p {
+        font-size: 1.4rem;
+    }
+
+    section#ate .card::Before {
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: -3rem;
+    }
+
+    section#ate .text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 2rem;
+
+        position: relative;
+
+        padding-left: 2rem;
+    }
+
+    section#ate .text h3 {
+        margin-block: 0;
+        font-size: 1.6rem;
+    }
+
+    section#ate .text p {
+        font-size: 1.6rem;
+    }
+
+    section#ate .text::before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        border-radius: 4rem;
+        left: 0;
+        top: 0;
+        background: #2A86FF;
+    }
+}

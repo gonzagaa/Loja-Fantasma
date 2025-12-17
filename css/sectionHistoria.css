@@ -1,0 +1,76 @@
+#historia {
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-white);
+}
+
+#historia img {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+#historia header {
+    margin-bottom: 0;
+
+    margin-bottom: 4rem;
+}
+
+#historia header h2 {
+    color: #001328;
+    font-size: 2.8rem;
+}
+
+#historia header p {
+    color: #001328;
+}
+
+#historia header p span {
+    color: #001328;
+}
+
+#historia header p strong {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    background: #c1ccd9;
+    font-weight: 500;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+#historia a button {
+    margin-top: 3rem;
+}
+
+@media (min-width: 1080px) {
+    section#historia img {
+        margin-bottom: 0;
+    }
+
+    section#historia header {
+        margin-bottom: 0;
+        text-align: left;
+        align-items: start;
+    }
+
+    section#historia .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+        grid-template-areas: "a b";
+        align-items: center;
+
+        margin-left: -25%;
+    }
+
+    section#historia .card:nth-child(2) header {
+        grid-area: a;
+    }
+
+    section#historia .card:nth-child(2) {
+        margin-left: initial;
+        margin-right: -25%;
+    }
+}
