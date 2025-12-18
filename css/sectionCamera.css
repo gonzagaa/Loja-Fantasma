@@ -90,9 +90,7 @@
     color: #000;
 }
 
-#camera .box.dois {
-    margin-top: 4rem;
-}
+
 
 #camera .box.dois .topics {
     display: flex;
@@ -163,11 +161,7 @@
     section#camera {
         padding-bottom: 10rem;
     }
-
-    section#camera .box.dois {
-        margin-top: 7rem;
-    }
-
+    
     section#camera .card .text {
         width: 100%;
     }

@@ -1,21 +1,9 @@
 #ate {
     overflow: hidden;
     position: relative;
-    background: var(--bg-white);
     padding-bottom: 8rem;
 }
 
-#ate header h2 {
-    color: #001328;
-}
-
-#ate header p {
-    color: #001328;
-}
-
-#ate header p span {
-    color: #001328;
-}
 
 #ate .cards {
     display: flex;
@@ -26,9 +14,10 @@
 }
 
 #ate .box.dois .cards {
-    background: #c1ccd9;
+   background: linear-gradient(45deg, #050b22, #020f22);
     padding: 2.5rem;
     border-radius: 1rem;
+    border: 1px solid #ffffff1b;
 }
 
 #ate .card {
@@ -47,7 +36,7 @@
 }
 
 #ate .card p {
-    color: #001328;
+    color: #eff7ff;
     font-size: 1.5rem;
 }
 

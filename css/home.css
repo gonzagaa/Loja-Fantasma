@@ -90,6 +90,9 @@
   width: 100%;
   object-fit: cover;
   z-index: 3;
+
+    mask-image: linear-gradient(to bottom, #000 50%, transparent);
+
 }
 
 #home img.bg.desktop {

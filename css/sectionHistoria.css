@@ -1,7 +1,8 @@
 #historia {
     overflow: hidden;
     position: relative;
-    background: var(--bg-white);
+
+    padding-bottom: 1rem;
 }
 
 #historia img {
@@ -16,18 +17,6 @@
     margin-bottom: 4rem;
 }
 
-#historia header h2 {
-    color: #001328;
-    font-size: 2.8rem;
-}
-
-#historia header p {
-    color: #001328;
-}
-
-#historia header p span {
-    color: #001328;
-}
 
 #historia header p strong {
     display: block;
@@ -45,6 +34,9 @@
 }
 
 @media (min-width: 1080px) {
+     section#historia {
+        padding-block: 10rem;
+     }
     section#historia img {
         margin-bottom: 0;
     }

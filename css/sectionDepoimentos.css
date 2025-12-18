@@ -1,24 +1,33 @@
 #depoimentos {
     overflow: hidden;
     position: relative;
-    background: var(--bg-white);
 
-    padding-top: 3rem;
     padding-bottom: 10rem;
+
+  border-radius: 5rem 5rem 0 0;
+   background: #000;
+
+   border-bottom: 1px solid #dadeff30;
+    border-top: 1px solid #dadeff30;
 }
 
-#depoimentos header h2 {
-    color: #001328;
-    font-size: 2.8rem;
+#depoimentos .content {
+    position: relative;
+    z-index: 2;
 }
 
-#depoimentos header p {
-    color: #001328;
+#depoimentos img.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+    opacity: 1;
 }
 
-#depoimentos header p span {
-    color: #001328;
-}
 
 #depoimentos .cards {
     border-radius: 1rem;
@@ -122,12 +131,12 @@ section#depoimentos a button {
     
     section#depoimentos .swiper:before {
         left: 0;
-        background: linear-gradient(to left, rgba(255, 255, 255, 0), #d1dce9);
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), #040f27);
     }
     
     section#depoimentos .swiper:after {
         right: 0;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0), #d1dce9);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #041927);
     }
 
     section#depoimentos .wrapper.carrossel {
