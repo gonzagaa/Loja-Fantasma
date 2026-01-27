@@ -134,6 +134,10 @@
     padding-inline: 15%;
 }
 
+#home a button.desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
 }
 
@@ -153,6 +157,14 @@
 
     padding-top: 0;
   }
+  
+   header#home a button.mobile {
+    display: none;
+   }
+
+   header#home a button.desktop {
+    display: inherit;
+   }
 
   header#home img.bg.desktop {
     display: inherit;
