@@ -10,14 +10,19 @@ if (larguraDaTela < 800) {
             disableOnInteraction: false,
           },
         creativeEffect: {
-          prev: {
-            shadow: true,
-            translate: ["-20%", 0, -1],
-          },
-          next: {
-            translate: ["100%", 0, 0],
-          },
-        },
+  limitProgress: 3,
+  prev: {
+    shadow: false,
+    translate: ["-120%", 0, -200],
+    scale: 0.9,
+    opacity: 0.6,
+  },
+  next: {
+    translate: ["120%", 0, -200],
+    scale: 0.9,
+    opacity: 0.6,
+  },
+},
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -29,7 +34,7 @@ if (larguraDaTela < 800) {
       });
 } else {
     var swiper3 = new Swiper(".mySwiper3", {
-        slidesPerView: 4,
+        slidesPerView: 5,
         spaceBetween: 20,
         loop: true,
         grabCursor: true,

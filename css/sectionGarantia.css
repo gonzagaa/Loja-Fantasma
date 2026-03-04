@@ -1,0 +1,76 @@
+#garantia {
+    overflow: hidden;
+    position: relative;
+}
+
+#garantia img {
+    width: 80%;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+
+    filter: saturate(150%);
+
+    filter:
+    drop-shadow(0 0 58px rgba(29, 164, 243, 0.22));
+
+}
+
+#garantia header {
+    margin-bottom: 0;
+
+    margin-bottom: 4rem;
+}
+
+
+#garantia header p strong {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    background: #c1ccd9;
+    font-weight: 500;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+#garantia a button {
+    margin-top: 3rem;
+}
+
+@media (min-width: 1080px) {
+    section#garantia img {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    section#garantia header {
+        margin-bottom: 0;
+        text-align: left;
+        align-items: start;
+    }
+
+    section#garantia .card {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 8rem;
+        grid-template-areas: "a b";
+        align-items: center;
+    }
+
+    section#garantia .card:nth-child(2) header {
+        grid-area: a;
+    }
+
+    section#garantia .card:nth-child(2) {
+        margin-left: initial;
+        margin-right: -25%;
+    }
+
+    section#garantia header h2 {
+        font-size: 4rem;
+    }
+
+    section#garantia header p {
+        font-size: 2rem;
+    }
+}
