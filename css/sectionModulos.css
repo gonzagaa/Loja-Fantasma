@@ -1,0 +1,118 @@
+#modulos {
+    overflow: hidden;
+    position: relative;
+}
+
+#modulos .cards {
+    border-radius: 1rem;
+}
+
+#modulos .cards .card {
+    position: relative;
+    user-select: none;
+}
+
+#modulos .cards .card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+#modulos .wrapper.carrossel {
+    position: relative;
+}
+
+#modulos img.logo {
+    position: absolute;
+}
+
+#modulos img.logo.um {
+    width: 9%;
+    right: 2%;
+    z-index: 1;
+    bottom: 0;
+
+    animation: Bg infinite ease-in-out 5s;
+}
+
+#modulos img.logo.dois {
+    width: 35%;
+    opacity: .05;
+    filter: blur(3px);
+    z-index: 0;
+    top: -10%;
+    left: -5%;
+}
+
+#modulos .swiper.dois {
+    display: none;
+}
+
+@media (min-width: 1080px) {
+
+    /* section#modulos .wrapper.carrossel {
+        width: 100%;
+        padding-inline: 0;
+    } */
+
+    section#modulos .content .cards {
+        overflow: initial;
+        border-radius: 0;
+    }
+
+    section#modulos .swiper {
+        position: relative;
+    }
+
+    section#modulos .swiper:before,
+    section#modulos .swiper:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 10rem;
+        height: 100%;
+        z-index: 2;
+    }
+
+    section#modulos .swiper.dois {
+    display: inherit;
+}
+    
+    section#modulos .swiper:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), #020a14);
+    }
+    
+    section#modulos .swiper:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #020a14);
+    }
+
+    section#modulos .wrapper.carrossel {
+        position: relative;
+    }
+
+    section#modulos img.logo {
+        display: inherit;
+        position: absolute;
+    }
+
+    section#modulos img.logo.um {
+        width: 4%;
+        right: -2%;
+        z-index: 1;
+        bottom: -5rem;
+
+        animation: Bg infinite ease-in-out 5s;
+        
+    }
+
+    section#modulos img.logo.dois {
+        width: 15%;
+        opacity: .05;
+        filter: blur(3px);
+        z-index: 0;
+        top: -20%;
+        left: -5%;
+    }
+}
