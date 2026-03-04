@@ -65,26 +65,16 @@ let swiper4;
 
 if (larguraDaTela < 800) {
   swiper4 = new Swiper(".mySwiper4", {
-    grabCursor: true,
-    effect: "creative",
+    slidesPerView: 1.2,
+    spaceBetween: 16,
     loop: true,
+    grabCursor: true,
+    allowTouchMove: true,
+    speed: 5000,
     autoplay: {
-      delay: 3500,
+      delay: 0,
       disableOnInteraction: false,
-    },
-    creativeEffect: {
-      limitProgress: 3,
-      prev: {
-        shadow: false,
-        translate: ["-120%", 0, -200],
-        scale: 0.9,
-        opacity: 0.6,
-      },
-      next: {
-        translate: ["120%", 0, -200],
-        scale: 0.9,
-        opacity: 0.6,
-      },
+      pauseOnMouseEnter: false,
     },
     pagination: {
       el: ".swiper-pagination",
@@ -101,9 +91,12 @@ if (larguraDaTela < 800) {
     spaceBetween: 20,
     loop: true,
     grabCursor: true,
+    allowTouchMove: true,
+    speed: 5000,
     autoplay: {
-      delay: 2500,
+      delay: 0,
       disableOnInteraction: false,
+      pauseOnMouseEnter: false,
     },
     pagination: {
       el: ".swiper-pagination",

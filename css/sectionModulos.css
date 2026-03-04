@@ -9,6 +9,10 @@
     padding-bottom: 4rem;
 }
 
+#modulos header h2 {
+    font-size: 2.2rem;
+}
+
 #modulos .cards .card {
     position: relative;
     user-select: none;
@@ -50,6 +54,10 @@
     display: none;
 }
 
+.mySwiper4 .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
 @media (min-width: 1080px) {
 
     /* section#modulos .wrapper.carrossel {
@@ -61,6 +69,11 @@
         overflow: initial;
         border-radius: 0;
     }
+
+    section#modulos header h2 {
+    font-size: 3.5rem;
+}
+
 
     section#modulos .swiper {
         position: relative;
