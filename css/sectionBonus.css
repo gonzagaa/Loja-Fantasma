@@ -38,18 +38,28 @@
 }
 
 #bonus .bonus header h2 span {
-    background: var(--gradient);
-    -webkit-background-clip: initial;
-    -webkit-text-fill-color: initial;
-    color: #000000;
-    border-radius: .5rem;
-    padding: .5rem 1rem;
-    font-size: 1.4rem;
-
     display: block;
-    margin-bottom: 1rem;
+    width: fit-content;
 
-    margin-inline: 25%;
+    margin: 0 auto 1.2rem auto;
+    padding: 0;
+
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+
+    background: linear-gradient(135deg, #7fe3ff 0%, #1da4f3 45%, #56c8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    text-shadow:
+        0 0 10px rgba(29, 164, 243, 0.25),
+        0 0 22px rgba(29, 164, 243, 0.18),
+        0 0 38px rgba(29, 164, 243, 0.10);
 }
 
 #bonus .bonus header h3 {
@@ -90,6 +100,7 @@
         line-height: 1;
         letter-spacing: -0.04em;
     }
+    
 
     section#bonus > .wrapper > .content > header p {
         font-size: 2rem;
@@ -150,11 +161,7 @@
         display: block;
         object-fit: cover;
 
-        border: 1px solid rgba(255, 255, 255, 0.08);
 
-        box-shadow:
-            0 20px 50px rgba(0, 0, 0, 0.35),
-            0 0 0 1px rgba(255, 255, 255, 0.03) inset;
     }
 
     section#bonus .bonus header {
@@ -171,30 +178,12 @@
         text-wrap: balance;
     }
 
-    section#bonus .bonus header h2 span {
-    display: block;
-    width: fit-content;
 
-    margin: 0 0 2rem 0;
-    padding: 1rem 1.8rem;
-    border-radius: 999rem;
 
-    font-size: 1.35rem;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    white-space: nowrap;
-
-    color: #031019;
-    background: linear-gradient(135deg, #55d6ff, #1da4f3);
-
-    box-shadow:
-        0 10px 30px rgba(29, 164, 243, 0.28),
-        inset 0 1px 0 rgba(255, 255, 255, 0.35);
-
-    -webkit-background-clip: initial;
-    -webkit-text-fill-color: initial;
+section#bonus .bonus header h2 span {
+    margin: 0 0 1.8rem 0;
+    font-size: 2rem;
+    letter-spacing: .18em;
 }
 
     section#bonus .bonus header p {
@@ -223,6 +212,14 @@
 
     section#bonus .bonus.dois img {
         grid-area: media;
+    }
+
+    section#bonus .bonus.um img {
+        margin-left: -10%;
+    }
+
+    section#bonus .bonus.um h2 {
+        margin-left: -13%;
     }
 
     section#bonus .bonus header h3 {

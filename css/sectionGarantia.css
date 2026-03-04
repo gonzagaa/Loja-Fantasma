@@ -1,6 +1,8 @@
 #garantia {
     overflow: hidden;
     position: relative;
+
+    padding-top: 3rem;
 }
 
 #garantia img {
