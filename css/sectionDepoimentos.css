@@ -124,6 +124,18 @@ section#depoimentos a button {
     margin-top: 3rem;
 }
 
+#depoimentos h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    background: var(--gradient);
+    color: #000;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
 @media (min-width: 1080px) {
     section#depoimentos .wrapper.botao {
         display: flex;
